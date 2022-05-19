@@ -16,9 +16,13 @@ body {
   display: grid;
   justify-content: center;
   align-content: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  border-width: 40px 15px 20px 15px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 15px;
 }
 
 .calculator-grid > button {
@@ -57,4 +61,11 @@ body {
 .output .current-operand {
   color: white;
   font-size: 2.5rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
